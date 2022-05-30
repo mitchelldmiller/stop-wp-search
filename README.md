@@ -48,7 +48,8 @@ Privacy
 -----------
 * Increases privacy. Stops random search requests.
 
-__License__
+License
+-----------
 Block WP Search is licensed under the MIT License.
 Encourage future development with a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4AAGBFXRAPFJY).
 
