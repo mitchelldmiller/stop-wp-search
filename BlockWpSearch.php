@@ -2,10 +2,10 @@
 /**
  * Plugin Name: Block WP Search
  * Description: Block all WordPress Searches.
- * Version: 1.00
+ * Version: 1.02
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
- * Plugin URI: https://mitchelldmiller.github.io/block-wp-search/
+ * Plugin URI: https://github.com/mitchelldmiller/block-wp-search
  * GitHub Plugin URI: https://github.com/mitchelldmiller/block-wp-search
  * License: MIT
  * License URI: https://github.com/mitchelldmiller/block-wp-search/blob/main/LICENSE
@@ -37,7 +37,7 @@
 class BlockWpSearch {
 
     /**
-     * Add init hook to block search requests.
+     * Add init hook to intercept search requests.
      * @see https://developer.wordpress.org/reference/hooks/init/
      * @return BlockWpSearch
      */
@@ -55,11 +55,14 @@ class BlockWpSearch {
         if (defined( 'WP_CLI' ) && WP_CLI) {
             return;
         }
-        if (empty($_SERVER['REQUEST_URI']) || strstr($_SERVER['REQUEST_URI'], '/wp-admin/') || $_SERVER['REQUEST_METHOD'] == 'HEAD') {
+        if (empty($_SERVER['REQUEST_URI']) || empty($_SERVER['REQUEST_METHOD'])) {
+            return;
+        }
+        if (strstr($_SERVER['REQUEST_URI'], '/wp-admin/') || $_SERVER['REQUEST_METHOD'] != 'GET') {
             return;
         } // end if
 
-        if (isset($_SERVER['REQUEST_METHOD']) && $_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['s'])) {
+        if (isset($_GET['s'])) {
             wp_safe_redirect('/not_found/', 307);
             exit;
         }
