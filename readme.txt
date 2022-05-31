@@ -5,7 +5,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Requires at least: 2.3
 Tested up to: 6.0.0
 Requires PHP: 5.3
-Stable tag: 1.00
+Stable tag: 1.02
 License: MIT
 License URI: https://github.com/mitchelldmiller/block-wp-search/blob/main/LICENSE
 
@@ -18,11 +18,9 @@ WordPress search is not always helpful: especially for small sites.
 Use Block WordPress Search plugin to redirect search requests.
 
 == Features ==
-
 * Redirects search requests to `/not_found/`
 
 = Learn More =
-
 * [Follow development on Github](https://github.com/mitchelldmiller/block-wp-search/).
 
 == Installation ==
@@ -35,7 +33,7 @@ Use Block WordPress Search plugin to redirect search requests.
 2. Activate the plugin through the WordPress _Plugins_ menu.
 
 = WP-CLI
-* How to install and activate the latest version of Quick Mail with [WP-CLI](https://wp-cli.org/) :
+* How to install and activate the latest version of Block WP Search with [WP-CLI](https://wp-cli.org/) :
 
 	`wp plugin install https://github.com/mitchelldmiller/block-wp-search/archive/main.zip --activate`
 
@@ -57,11 +55,17 @@ Use Block WordPress Search plugin to redirect search requests.
 * First public release.
 * Tested with WordPress 6.0.0
 
+= 1.02
+* Check for empty server variables.
 
 == Upgrade Notice ==
 
 = 1.00 =
 * First public release.
+
+= 1.02 =
+* Upgrade recommeneded.
+
 
 == License ==
 Block Wp Search is free for personal or commercial use. Please support future development with a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4AAGBFXRAPFJY).

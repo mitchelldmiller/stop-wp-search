@@ -2,7 +2,7 @@ block-wp-search
 ====================
 * Requires: [WordPress 2.3](https://wordpress.org/support/wordpress-version/version-2-3/)
 * Tested with: [WordPress 6.0](https://wordpress.org/support/wordpress-version/version-6-0/)
-* Stable version: [1.00](https://github.com/mitchelldmiller/block-wp-search/releases/latest)
+* Stable version: [1.02](https://github.com/mitchelldmiller/block-wp-search/releases/latest)
 
 Description
 -----------
@@ -10,7 +10,6 @@ Description
 
 WordPress search is not always helpful: especially for small sites. 
 Use Block WordPress Search plugin to redirect search requests.
-
 
 Features
 -----------
@@ -38,7 +37,7 @@ Configuration
 
 Updates
 -----------
-* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to update Quick Mail from Github.
+* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to update Block WP Search from Github.
 
 Translators / Translations
 -----------
