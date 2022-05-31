@@ -19,7 +19,7 @@ Installation
 -----------
 
 __Automated__
-* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to install Quick Mail from Github.
+* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to install Block WP Search from Github.
 * See [GitHub Updater Wiki](https://github.com/afragen/github-updater/wiki) for additional information.
 
 __Manual__
@@ -27,9 +27,9 @@ __Manual__
 2. Activate the plugin through the WordPress _Plugins_ menu.
 
 __WP-CLI__
-* How to install and activate the latest version of Quick Mail with [WP-CLI](https://wp-cli.org/) :
+* How to install and activate the latest version of Block WP Search with [WP-CLI](https://wp-cli.org/) :
 
-	`wp plugin install https://github.com/mitchelldmiller/block-wp-search/archive/main.zip --activate`
+`wp plugin install https://github.com/mitchelldmiller/block-wp-search/archive/refs/tags/v.102.zip --activate`
 
 Configuration
 -----------
