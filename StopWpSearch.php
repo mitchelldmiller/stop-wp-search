@@ -1,20 +1,21 @@
 <?php
 /**
- * Plugin Name: Block WP Search
- * Description: Block all WordPress Searches.
- * Version: 1.02
+ * Plugin Name: Stop WP Search
+ * Description: Stop users from searching your WordPress Website. Redirect search requests.
+ * Version: 1.03
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
- * Plugin URI: https://github.com/mitchelldmiller/block-wp-search
- * GitHub Plugin URI: https://github.com/mitchelldmiller/block-wp-search
+ * Plugin URI: https://github.com/mitchelldmiller/stop-wp-search
+ * GitHub Plugin URI: https://github.com/mitchelldmiller/stop-wp-search
  * License: MIT
- * License URI: https://github.com/mitchelldmiller/block-wp-search/blob/main/LICENSE
+ * License URI: https://github.com/mitchelldmiller/stop-wp-search/blob/main/LICENSE
  */
 
 /*
- * Block WP Search WordPress Plugin - Block all WordPress Searches.
+ * Stop WP Search - WordPress Plugin - Redirect all WordPress Searches.
+ * Formerly Block WP Search.
  *
- * Copyright (C) 2022 Mitchell D. Miller
+ * Copyright (C) 2022-2023 Mitchell D. Miller
  *
  * Permission is hereby granted, free of charge, to any person obtaining a
  * copy of this software and associated documentation files (the "Software"),
@@ -34,16 +35,16 @@
  * SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  *
 */
-class BlockWpSearch {
+class StopWpSearch {
 
     /**
      * Add init hook to intercept search requests.
      * @see https://developer.wordpress.org/reference/hooks/init/
-     * @return BlockWpSearch
+     * @return StopWpSearch
      */
     public static function no_searches_allowed() {
         $bs = new self();
-        add_action('init', array($bs, 'block_searches'), 0, 0);
+        add_action('init', array($bs, 'stop_searches'), 0, 0);
         return $bs;
     }
 
@@ -51,7 +52,7 @@ class BlockWpSearch {
      * Block all searches. Redirect to /not_found/.
      * @todo Add option to change redirect.
      */
-    public function block_searches() {
+    public function stop_searches() {
         if (defined( 'WP_CLI' ) && WP_CLI) {
             return;
         }
@@ -75,4 +76,4 @@ class BlockWpSearch {
     public function __construct() { }
 
 }
-BlockWpSearch::no_searches_allowed();
+StopWpSearch::no_searches_allowed();
