@@ -1,15 +1,19 @@
-block-wp-search
+Stop WP Search
 ====================
 * Requires: [WordPress 2.3](https://wordpress.org/support/wordpress-version/version-2-3/)
-* Tested with: [WordPress 6.0](https://wordpress.org/support/wordpress-version/version-6-0/)
-* Stable version: [1.02](https://github.com/mitchelldmiller/block-wp-search/releases/latest)
+* Tested with: [WordPress 6.2.2](https://wordpress.org/support/wordpress-version/version-6-2-2/)
+* Stable version: [1.03](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
 
 Description
 -----------
->Block WP Search is the easiest way to block all search requests to your WordPress site.
+> Stop users from searching your WordPress Website. Redirect search requests.
 
-WordPress search is not always helpful: especially for small sites. 
-Use Block WordPress Search plugin to redirect search requests.
+Stop WP Searches is the easiest way to block search requests to your WordPress site.
+
+WordPress search is not always helpful: especially for small sites.
+Use Stop WP Search plugin to redirect search requests.
+
+Formerly: Block WP Search.
 
 Features
 -----------
@@ -19,17 +23,16 @@ Installation
 -----------
 
 __Automated__
-* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to install Block WP Search from Github.
-* See [GitHub Updater Wiki](https://github.com/afragen/github-updater/wiki) for additional information.
+* Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to install / update Stop WP Search from Github.
 
 __Manual__
 1. Download the plugin and unpack in your `/wp-content/plugins` directory.
 2. Activate the plugin through the WordPress _Plugins_ menu.
 
 __WP-CLI__
-* How to install and activate the latest version of Block WP Search with [WP-CLI](https://wp-cli.org/) :
+* How to install and activate the latest version of Stop WP Search with [WP-CLI](https://wp-cli.org/) :
 
-`wp plugin install https://github.com/mitchelldmiller/block-wp-search/archive/refs/tags/v.102.zip --activate`
+`wp plugin install https://github.com/mitchelldmiller/stop-wp-search/archive/refs/tags/v.103.zip --activate`
 
 Configuration
 -----------
@@ -37,7 +40,7 @@ Configuration
 
 Updates
 -----------
-* Install [GitHub Updater](https://github.com/afragen/github-updater/releases/latest) plugin to update Block WP Search from Github.
+* Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to update Stop WP Search from Github.
 
 Translators / Translations
 -----------
@@ -45,10 +48,10 @@ Translators / Translations
 
 Privacy
 -----------
-* Increases privacy. Stops random search requests.
+* Increases privacy. Prevents random search requests.
 
 License
 -----------
-Block WP Search is licensed under the MIT License.
-Encourage future development with a [donation](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=4AAGBFXRAPFJY).
+Stop WP Search is licensed under the MIT License.
 
+Stop WP Search is free for personal or commercial use. Please support future development with a [donation](https://mitchelldmiller.com/donate).
