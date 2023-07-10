@@ -6,9 +6,9 @@ Stop WP Search
 
 Description
 -----------
-> Stop users from searching your WordPress Website. Redirect search requests.
+> Tired of irrelevant search results on your WordPress site? Say goodbye to unwanted search requests with Stop WP Search!
 
-Stop WP Searches is the easiest way to block search requests to your WordPress site.
+Stop WP Search is the easiest way to block search requests to your WordPress site.
 
 WordPress search is not always helpful: especially for small sites.
 Use Stop WP Search plugin to redirect search requests.
