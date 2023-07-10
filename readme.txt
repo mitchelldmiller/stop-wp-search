@@ -1,6 +1,6 @@
 === Quick Mail ===
 Contributors: brainiac
-Tags: search
+Tags: search, security
 Donate link: https://mitchelldmiller.com/donate
 Requires at least: 2.3
 Tested up to: 6.2.2
@@ -12,9 +12,10 @@ License URI: https://github.com/mitchelldmiller/stop-wp-search/blob/main/LICENSE
 Stop users from searching your WordPress Website. Redirect search requests.
 
 == Description ==
-> Stop users from searching your WordPress Website. Redirect search requests.
+> Tired of irrelevant search results on your WordPress site? Say goodbye to unwanted search requests with Stop WP Search!
 
-Stop WP Searches is the easiest way to block search requests to your WordPress site.
+
+Stop WP Search is the easiest way to block search requests to your WordPress site.
 
 WordPress search is not always helpful: especially for small sites.
 Use Stop WP Search plugin to redirect search requests.

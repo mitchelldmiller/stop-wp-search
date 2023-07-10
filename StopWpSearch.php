@@ -5,7 +5,7 @@
  * Version: 1.03
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
- * Plugin URI: https://github.com/mitchelldmiller/stop-wp-search
+ * Plugin URI: https://wheredidmybraingo.com/improve-and-secure-your-wordpress-site-with-stop-wp-search-plugin/
  * GitHub Plugin URI: https://github.com/mitchelldmiller/stop-wp-search
  * License: MIT
  * License URI: https://github.com/mitchelldmiller/stop-wp-search/blob/main/LICENSE
@@ -49,7 +49,7 @@ class StopWpSearch {
     }
 
     /**
-     * Block all searches. Redirect to /not_found/.
+     * Stop all searches. Redirect to /not_found/.
      * @todo Add option to change redirect.
      */
     public function stop_searches() {
