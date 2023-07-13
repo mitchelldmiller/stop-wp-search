@@ -2,7 +2,7 @@ Stop WP Search
 ====================
 * Requires: [WordPress 2.3](https://wordpress.org/support/wordpress-version/version-2-3/)
 * Tested with: [WordPress 6.2.2](https://wordpress.org/support/wordpress-version/version-6-2-2/)
-* Stable version: [1.10](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
+* Stable version: [1.11](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
 
 Description
 -----------
@@ -27,7 +27,7 @@ __Automated__
 * Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to install / update Stop WP Search from Github.
 
 __Manual__
-1. Download the plugin and unpack in your `/wp-content/plugins` directory.
+1. Download the latest plugin release and unpack in your `/wp-content/plugins` directory.
 2. Activate the plugin through the WordPress Plugins menu.
 
 __WP-CLI__

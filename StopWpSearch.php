@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Stop WP Search
  * Description: Stop users from searching your WordPress Website. Redirect search requests.
- * Version: 1.10
+ * Version: 1.11
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
  * Plugin URI: https://wheredidmybraingo.com/improve-and-secure-your-wordpress-site-with-stop-wp-search-plugin/
@@ -53,7 +53,7 @@ class StopWpSearch {
      * @return string
      * @see https://wordpress.stackexchange.com/a/402101
      */
-    public function not_found(string $template): string {
+    public function not_found(string $template) {
         if (isset($_GET['s']) && !strstr($_SERVER['REQUEST_URI'], '/wp-admin/')) {
             global $wp_query;
             $wp_query->set_404();

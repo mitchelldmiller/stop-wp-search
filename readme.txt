@@ -5,7 +5,7 @@ Donate link: https://mitchelldmiller.com/donate
 Requires at least: 2.3
 Tested up to: 6.2.2
 Requires PHP: 5.3
-Stable tag: 1.10
+Stable tag: 1.11
 License: MIT
 License URI: https://github.com/mitchelldmiller/stop-wp-search/blob/main/LICENSE
 
@@ -19,7 +19,7 @@ Stop WP Search is the easiest way to stop search requests to your WordPress site
 WordPress search is not always helpful: especially for small sites.
 Use Stop WP Search plugin to stop search requests.
 
-Formerly: Block WP Search.
+_Formerly: Block WP Search_
 
 == Features ==
 * Search requests return "document not found."
@@ -70,6 +70,10 @@ Formerly: Block WP Search.
 = 1.10 =
 * Fix soft 404 error on Google Webmaster Tools.
 
+= 1.11 =
+* Removed return type declaration to fix PHP 5 error.
+
+
 == Upgrade Notice ==
 
 = 1.00 =
@@ -85,6 +89,9 @@ Formerly: Block WP Search.
 * Upgrade recommended.
 
 = 1.10 =
+* Upgrade recommended.
+
+= 1.11 =
 * Upgrade recommended.
 
 == License ==
