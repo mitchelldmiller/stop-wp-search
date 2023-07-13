@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Stop WP Search
  * Description: Stop users from searching your WordPress Website. Redirect search requests.
- * Version: 1.03
+ * Version: 1.10
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
  * Plugin URI: https://wheredidmybraingo.com/improve-and-secure-your-wordpress-site-with-stop-wp-search-plugin/
@@ -12,7 +12,7 @@
  */
 
 /*
- * Stop WP Search - WordPress Plugin - Redirect all WordPress Searches.
+ * Stop WP Search - WordPress Plugin - Stop all WordPress Searches.
  * Formerly Block WP Search.
  *
  * Copyright (C) 2022-2023 Mitchell D. Miller
@@ -38,36 +38,30 @@
 class StopWpSearch {
 
     /**
-     * Add init hook to intercept search requests.
-     * @see https://developer.wordpress.org/reference/hooks/init/
+     * Add filter to intercept search requests.
      * @return StopWpSearch
      */
     public static function no_searches_allowed() {
         $bs = new self();
-        add_action('init', array($bs, 'stop_searches'), 0, 0);
+        add_filter('template_include', array($bs, 'not_found'));
         return $bs;
     }
 
     /**
-     * Stop all searches. Redirect to /not_found/.
-     * @todo Add option to change redirect.
+     * Search requests are not found.
+     * @param string $template
+     * @return string
+     * @see https://wordpress.stackexchange.com/a/402101
      */
-    public function stop_searches() {
-        if (defined( 'WP_CLI' ) && WP_CLI) {
-            return;
+    public function not_found(string $template): string {
+        if (isset($_GET['s']) && !strstr($_SERVER['REQUEST_URI'], '/wp-admin/')) {
+            global $wp_query;
+            $wp_query->set_404();
+            status_header(404);
+            nocache_headers();
+            $template = get_404_template();
         }
-        if (empty($_SERVER['REQUEST_URI']) || empty($_SERVER['REQUEST_METHOD'])) {
-            return;
-        }
-        if (strstr($_SERVER['REQUEST_URI'], '/wp-admin/') || $_SERVER['REQUEST_METHOD'] != 'GET') {
-            return;
-        } // end if
-
-        if (isset($_GET['s'])) {
-            wp_safe_redirect('/not_found/', 307);
-            exit;
-        }
-        return;
+        return $template;
     }
 
     /**
