@@ -2,22 +2,23 @@ Stop WP Search
 ====================
 * Requires: [WordPress 2.3](https://wordpress.org/support/wordpress-version/version-2-3/)
 * Tested with: [WordPress 6.2.2](https://wordpress.org/support/wordpress-version/version-6-2-2/)
-* Stable version: [1.03](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
+* Stable version: [1.10](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
 
 Description
 -----------
 > Tired of irrelevant search results on your WordPress site? Say goodbye to unwanted search requests with Stop WP Search!
 
-Stop WP Search is the easiest way to block search requests to your WordPress site.
+Stop users from searching your WordPress Website. Search requests are "not found."
 
 WordPress search is not always helpful: especially for small sites.
-Use Stop WP Search plugin to redirect search requests.
 
-Formerly: Block WP Search.
+Stop WP Search is the easiest way to stop search requests to your WordPress site.
+
+_Formerly: Block WP Search_
 
 Features
 -----------
-* Redirects search requests to `/not_found/`
+* Search requests return "document not found."
 
 Installation
 -----------
@@ -27,20 +28,16 @@ __Automated__
 
 __Manual__
 1. Download the plugin and unpack in your `/wp-content/plugins` directory.
-2. Activate the plugin through the WordPress _Plugins_ menu.
+2. Activate the plugin through the WordPress Plugins menu.
 
 __WP-CLI__
-* How to install and activate the latest version of Stop WP Search with [WP-CLI](https://wp-cli.org/) :
+* Install and activate the latest version of Stop WP Search with [WP-CLI](https://wp-cli.org/) :
 
-`wp plugin install https://github.com/mitchelldmiller/stop-wp-search/archive/refs/tags/v.103.zip --activate`
+`wp plugin install https://github.com/mitchelldmiller/stop-wp-search/archive/main.zip --activate`
 
 Configuration
 -----------
 * No options.
-
-Updates
------------
-* Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to update Stop WP Search from Github.
 
 Translators / Translations
 -----------
