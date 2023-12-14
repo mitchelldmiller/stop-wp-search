@@ -1,18 +1,20 @@
 Stop WP Search
 ====================
 * Requires: [WordPress 2.3](https://wordpress.org/support/wordpress-version/version-2-3/)
-* Tested with: [WordPress 6.2.2](https://wordpress.org/support/wordpress-version/version-6-2-2/)
+* Tested up to: [WordPress 6.4.2](https://wordpress.org/support/wordpress-version/version-6-4-2/)
 * Stable version: [1.11](https://github.com/mitchelldmiller/stop-wp-search/releases/latest)
 
 Description
 -----------
 > Tired of irrelevant search results on your WordPress site? Say goodbye to unwanted search requests with Stop WP Search!
 
-Stop users from searching your WordPress Website. Search requests are "not found."
-
 WordPress search is not always helpful: especially for small sites.
 
-Stop WP Search is the easiest way to stop search requests to your WordPress site.
+This plugin prevents users from searching your WordPress Website.
+
+All search results are "not found."
+
+Stop WP Search is the easiest way to stop search requests to your WordPress site!
 
 _Formerly: Block WP Search_
 
@@ -22,9 +24,6 @@ Features
 
 Installation
 -----------
-
-__Automated__
-* Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to install / update Stop WP Search from Github.
 
 __Manual__
 1. Download the latest plugin release and unpack in your `/wp-content/plugins` directory.
@@ -37,11 +36,11 @@ __WP-CLI__
 
 Configuration
 -----------
-* No options.
+* No options!
 
 Translators / Translations
 -----------
-* Nothing to translate.
+* Nothing to translate!
 
 Privacy
 -----------
