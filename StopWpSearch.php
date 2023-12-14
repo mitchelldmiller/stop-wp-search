@@ -6,7 +6,6 @@
  * Author: Mitchell D. Miller
  * Author URI: https://mitchelldmiller.com/
  * Plugin URI: https://wheredidmybraingo.com/improve-and-secure-your-wordpress-site-with-stop-wp-search-plugin/
- * GitHub Plugin URI: https://github.com/mitchelldmiller/stop-wp-search
  * License: MIT
  * License URI: https://github.com/mitchelldmiller/stop-wp-search/blob/main/LICENSE
  */

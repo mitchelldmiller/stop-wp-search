@@ -3,7 +3,7 @@ Contributors: brainiac
 Tags: search, security
 Donate link: https://mitchelldmiller.com/donate
 Requires at least: 2.3
-Tested up to: 6.2.2
+Tested up to: 6.4.2
 Requires PHP: 5.3
 Stable tag: 1.11
 License: MIT
@@ -28,9 +28,6 @@ _Formerly: Block WP Search_
 * [Follow development on Github](https://github.com/mitchelldmiller/stop-wp-search/).
 
 == Installation ==
-= Automated =
-* Install [Git Updater](https://github.com/afragen/git-updater/releases/latest) plugin to install / update Stop WP Search from Github.
-
 = Manual =
 1. Download the plugin and unpack in your `/wp-content/plugins` directory.
 2. Activate the plugin through the WordPress _Plugins_ menu.
